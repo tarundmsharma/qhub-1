@@ -112,7 +112,7 @@ pip install git+https://github.com/Quansight/qhub.git@dev
 ```
 
 ## Contributions
-Thinking about contributing? Check out our [Contribution Guidelines](https://github.com/Quansight/qhub/blob/main/CONTRIBUTING.md).
+Thinking about contributing? Check out our [Contribution Guidelines](https://github.com/Quansight/qhub/blob/main/CONTRIBUTING.md)..
 
 ## License
 [QHub is BSD3 licensed](LICENSE).
