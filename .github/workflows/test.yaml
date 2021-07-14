@@ -143,12 +143,12 @@ jobs:
       - name: Get routing table for docker pods
         run: |
           ip route
-      #- name: Configure LoadBalancer IPs
-        #run: |
-          #python tests/scripts/minikube-loadbalancer-ip.py
-      #- name: Enable Minikube metallb
-        #run: |
-          #minikube addons enable metallb
+      - name: Configure LoadBalancer IPs
+        run: |
+          python tests/scripts/minikube-loadbalancer-ip.py
+      - name: Enable Minikube metallb
+        run: |
+          minikube addons enable metallb
       - name: Basic kubectl checks before deployment
         run: |
           kubectl get all,cm,secret,ing -A
