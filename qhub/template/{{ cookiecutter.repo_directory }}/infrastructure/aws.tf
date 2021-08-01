@@ -41,7 +41,7 @@ module "network" {
   }
 
   vpc_cidr_block         = var.vpc_cidr_block
-  aws_availability_zones = length(var.availability_zones) >= 2 ? var.availability_zones : [data.aws_availability_zones.awszones.names[0], data.aws_availability_zones.awszones.names[1]]
+  aws_availability_zones = length(var.availability_zones) == 1 ? var.availability_zones : [data.aws_availability_zones.awszones.names[0]]#, data.aws_availability_zones.awszones.names[1]]
 }
 
 
